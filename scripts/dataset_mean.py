@@ -33,7 +33,7 @@ data_transform = transforms.Compose([
 
 # dataset loader
 data_dir = osp.join('..', 'data', 'deepslam_data', args.dataset)
-kwargs = dict(sequence=args.scene, data_path=data_dir, train=True, real=False,
+kwargs = dict(scene=args.scene, data_path=data_dir, train=True, real=False,
   transform=data_transform)
 if args.dataset == '7Scenes':
   dset = SevenScenes(**kwargs)
