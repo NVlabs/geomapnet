@@ -35,7 +35,7 @@ batch_size = args.n_cores
 data_dir = osp.join('..', 'data', 'deepslam_data', 'RobotCar')
 transform = transforms.Compose([transforms.Scale(256),
                                 transforms.Lambda(lambda x: np.asarray(x))])
-dset = RobotCar(sequence=args.scene, data_path=data_dir, train=(not args.val),
+dset = RobotCar(scene=args.scene, data_path=data_dir, train=(not args.val),
                 transform=transform, undistort=True)
 loader = DataLoader(dset, batch_size=batch_size, num_workers=args.n_cores,
                     collate_fn=safe_collate)
