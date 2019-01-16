@@ -24,6 +24,9 @@ Section 3.5 of the paper)
 - `real` is a flag indicating whether the poses should be GPS/SLAM/integration
 of visual odometry (true) or from ground truth (false)
 
+- `color_jitter` is the intensity of color jittering (brightness, hue, contrast and saturation) data augmentation.
+NOTE: Set `color_jitter = 0` in `mapnet.ini` while training it on the 7 Scenes dataset. 
+
 - `s_abs_trans`, `s_abs_rot`, `s_rel_trans`, `s_rel_rot` are the covariance
 values for absolute and relative translations and rotations passed to the PGO
 algorithm (see Appendix in our
