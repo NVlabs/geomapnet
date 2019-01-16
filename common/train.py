@@ -336,17 +336,19 @@ def step_feedfwd(data, model, cuda, target=None, criterion=None, optim=None,
   if train:
     assert criterion is not None
 
-  data_var = Variable(data, volatile=(not train), requires_grad=train)
+  data_var = Variable(data, requires_grad=train)
   if cuda:
     data_var = data_var.cuda(async=True)
-  output = model(data_var)
+  with torch.set_grad_enabled(train):
+    output = model(data_var)
 
   if criterion is not None:
     if cuda:
       target = target.cuda(async=True)
 
-    target_var = Variable(target, volatile=(not train), requires_grad=False)
-    loss = criterion(output, target_var)
+    target_var = Variable(target, requires_grad=False)
+    with torch.set_grad_enabled(train):
+      loss = criterion(output, target_var)
 
     if train:
       # SGD step
@@ -356,13 +358,15 @@ def step_feedfwd(data, model, cuda, target=None, criterion=None, optim=None,
         torch.nn.utils.clip_grad_norm(model.parameters(), max_grad_norm)
       optim.learner.step()
 
-    return loss.data[0], output
+    return loss.item(), output
   else:
     return 0, output
+
 
 def step_lstm(data, model, cuda, target=None, criterion=None, optim=None,
     train=True):
   """
+  NEVER USED
   training/validation step for a feedforward NN
   :param data: N x T x C x H x w
   :param target: N x T x 7

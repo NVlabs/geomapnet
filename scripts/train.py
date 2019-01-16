@@ -122,7 +122,7 @@ if color_jitter > 0:
   assert color_jitter <= 1.0
   print 'Using ColorJitter data augmentation'
   tforms.append(transforms.ColorJitter(brightness=color_jitter,
-    contrast=color_jitter, saturation=color_jitter, hue=color_jitter/2))
+    contrast=color_jitter, saturation=color_jitter, hue=0.5))
 tforms.append(transforms.ToTensor())
 tforms.append(transforms.Normalize(mean=stats[0], std=np.sqrt(stats[1])))
 data_transform = transforms.Compose(tforms)

@@ -10,7 +10,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.nn.init
-#from IPython.core.debugger import set_trace
 import numpy as np
 
 import os
@@ -59,15 +58,15 @@ class PoseNet(nn.Module):
 
     for m in init_modules:
       if isinstance(m, nn.Conv2d) or isinstance(m, nn.Linear):
-        nn.init.kaiming_normal(m.weight.data)
+        nn.init.kaiming_normal_(m.weight.data)
         if m.bias is not None:
-          nn.init.constant(m.bias.data, 0)
+          nn.init.constant_(m.bias.data, 0)
 
   def forward(self, x):
     x = self.feature_extractor(x)
     x = F.relu(x)
     if self.droprate > 0:
-      x = F.dropout(x, p=self.droprate, training=self.training)
+      x = F.dropout(x, p=self.droprate)
 
     xyz  = self.fc_xyz(x)
     wpqr = self.fc_wpqr(x)
