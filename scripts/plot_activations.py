@@ -77,7 +77,7 @@ if train:
 else:
   print 'Visualizing VAL data'
 data_dir = osp.join('..', 'data', 'deepslam_data', args.dataset)
-kwargs = dict(sequence=args.scene, data_path=data_dir, train=train,
+kwargs = dict(scene=args.scene, data_path=data_dir, train=train,
   transform=data_transform, target_transform=target_transform, seed=seed)
 if args.dataset == '7Scenes':
   data_set = SevenScenes(**kwargs)
