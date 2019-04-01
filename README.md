@@ -27,6 +27,8 @@ MapNet uses a Conda environment that makes it easy to install all dependencies.
 
 3. Activate the environment: `conda activate mapnet_release`.
 
+4. Note that our code has been tested with PyTorch v0.4.1.
+
 ## Data
 We support the
 [7Scenes](https://www.microsoft.com/en-us/research/project/rgb-d-dataset-7-scenes/)
