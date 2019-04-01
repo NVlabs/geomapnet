@@ -11,7 +11,7 @@ Licensed under the CC BY-NC-SA 4.0 license (https://creativecommons.org/licenses
 
 This is the PyTorch implementation of our CVPR 2018 paper
 
-[Samarth Brahmbhatt, Jinwei Gu, Kihwan Kim, James Hays, and Jan Kautz. Geometry-Aware Learning of Maps for Camera Localization. CVPR 2018.](https://arxiv.org/abs/1712.03342).
+"[Geometry-Aware Learning of Maps for Camera Localization](https://arxiv.org/abs/1712.03342)" - CVPR 2018 (Spotlight). [Samarth Brahmbhatt](https://samarth-robo.github.io/), [Jinwei Gu](http://www.gujinwei.org/), [Kihwan Kim](https://www.cc.gatech.edu/~kihwan23/), [James Hays](https://www.cc.gatech.edu/~hays/), and [Jan Kautz](http://jankautz.com/)
 
 ### A four-minute video summary (click below for the video)
 
