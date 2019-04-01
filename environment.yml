@@ -11,7 +11,7 @@ dependencies:
 - python=2.7
 - scikit-learn
 - scipy
-- pytorch
+- pytorch=0.4.1
 - torchvision
 - matplotlib
 - pip:
