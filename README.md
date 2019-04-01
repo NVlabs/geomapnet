@@ -21,7 +21,7 @@ This is the PyTorch implementation of our CVPR 2018 paper
 
 MapNet uses a Conda environment that makes it easy to install all dependencies.
 
-1. Install [miniconda](https://conda.io/miniconda.html) with Python 2.7.
+1. Install [miniconda](https://docs.conda.io/en/latest/miniconda.html) with Python 2.7.
 
 2. Create the `mapnet` Conda environment: `conda env create -f environment.yml`.
 
