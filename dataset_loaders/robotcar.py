@@ -14,6 +14,7 @@ import utils
 from functools import partial
 from common.pose_utils import process_poses
 import pickle
+from PIL import Image
 
 class RobotCar(data.Dataset):
   def __init__(self, scene, data_path, train, transform=None,
@@ -121,6 +122,7 @@ class RobotCar(data.Dataset):
       while img is None:
         if self.undistort:
           img = utils.load_image(self.imgs[index], loader=self.im_loader)
+          img = Image.fromarray(img)
         else:
           img = utils.load_image(self.imgs[index])
         pose = self.poses[index]
