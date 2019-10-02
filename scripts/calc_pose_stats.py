@@ -23,7 +23,7 @@ data_dir = osp.join('..', 'data', 'deepslam_data', args.dataset)
 # dataset loader
 # creating the dataset with train=True and real=False saves the stats from the
 # training split
-kwargs = dict(sequence=args.scene, data_path=data_dir, train=True, real=False,
+kwargs = dict(scene=args.scene, data_path=data_dir, train=True, real=False,
   skip_images=True, seed=7)
 if args.dataset == '7Scenes':
   dset = SevenScenes(**kwargs)
