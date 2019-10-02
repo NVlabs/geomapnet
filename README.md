@@ -59,7 +59,7 @@ the dataset SDK, and run `cd scripts && ./make_robotcar_symlinks.sh` after
 editing the `ROBOTCAR_SDK_ROOT` variable in it appropriately.
 
 2. For each sequence, you need to download the `stereo_centre`, `vo` and `gps`
-tar files from the dataset website.
+tar files from the dataset website (more details in [this comment](https://github.com/NVlabs/geomapnet/issues/26#issuecomment-537523192)).
 
 3. The directory for each 'scene' (e.g. `full`) has .txt files defining the
 train/test split. While training MapNet++,
