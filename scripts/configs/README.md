@@ -11,9 +11,9 @@ Licensed under the CC BY-NC-SA 4.0 license (https://creativecommons.org/licenses
 ## Hyperparameters
 Most parameters in the config files are self-explanatory. Here are some notes:
 
-- `beta` is the initial value of Beta in Eq. 3 of the paper
+- `beta` is the initial value of Gamma (Eq. 3 of the paper) for absolute pose
 
-- `gamma` is the initial value of Gamma in Eq. 3 of the paper
+- `gamma` is the initial value of Gamma (Eq. 3 of the paper) for relative pose
 
 - `steps` is the size of tuples of images to use for training (parameter `s`
 described in Section 3.5 of the paper)
