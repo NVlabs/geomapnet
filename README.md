@@ -2,10 +2,29 @@
 ![Python 2.7](https://img.shields.io/badge/python-2.7-green.svg)
 # Geometry-Aware Learning of Maps for Camera Localization 
 
-## License
+## Citation
+If you find this code useful for your research, please cite our paper
 
-Copyright (C) 2018 NVIDIA Corporation.  All rights reserved.
-Licensed under the CC BY-NC-SA 4.0 license (https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode). 
+```
+@inproceedings{mapnet2018,
+  title={Geometry-Aware Learning of Maps for Camera Localization},
+  author={Samarth Brahmbhatt and Jinwei Gu and Kihwan Kim and James Hays and Jan Kautz},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2018}
+}
+```
+
+## Table of Contents
+- [Documentation](#documentation)
+- [Setup](#setup)
+- [Data](#data)
+- [Running the code](#running-the-code)
+  - [Demo/Inference](#demo/inference)
+  - [Train](#train)
+  - [Network Attention Visualization](#network-attention-visualization)
+  - [Other tools](#other-tools)
+- [FAQ](#faq)
+- [License](#license)
 
 ## Documentation 
 
@@ -269,16 +288,13 @@ images to a `centre_processed` directory in the `stereo` directory. After the
 script finishes, you must rename this directory to `centre` so that the dataloader
 uses these undistorted and demosaiced images.
 
----
+## FAQ
+Collection of issues and resolution comments that might be useful:
+- Reproducing results: [#36](https://github.com/NVlabs/geomapnet/issues/36)
+- Pose normalization, pose stats: [#35](https://github.com/NVlabs/geomapnet/issues/35), [#37](https://github.com/NVlabs/geomapnet/issues/37)
+- Data: [#26](https://github.com/NVlabs/geomapnet/issues/26)
 
-### Citation
-If you find this code useful for your research, please cite our paper
+## License
 
-```
-@inproceedings{mapnet2018,
-  title={Geometry-Aware Learning of Maps for Camera Localization},
-  author={Samarth Brahmbhatt and Jinwei Gu and Kihwan Kim and James Hays and Jan Kautz},
-  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2018}
-}
-```
+Copyright (C) 2018 NVIDIA Corporation.  All rights reserved.
+Licensed under the CC BY-NC-SA 4.0 license (https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
