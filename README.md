@@ -2,6 +2,14 @@
 ![Python 2.7](https://img.shields.io/badge/python-2.7-green.svg)
 # Geometry-Aware Learning of Maps for Camera Localization 
 
+This is the PyTorch implementation of our CVPR 2018 paper
+
+"[Geometry-Aware Learning of Maps for Camera Localization](https://arxiv.org/abs/1712.03342)" - CVPR 2018 (Spotlight). [Samarth Brahmbhatt](https://samarth-robo.github.io/), [Jinwei Gu](http://www.gujinwei.org/), [Kihwan Kim](https://www.cc.gatech.edu/~kihwan23/), [James Hays](https://www.cc.gatech.edu/~hays/), and [Jan Kautz](http://jankautz.com/)
+
+### A four-minute video summary (click below for the video)
+
+[![mapnet](./figures/mapnet.png)](https://www.youtube.com/watch?v=X6mF_IbOb4A)
+
 ## Citation
 If you find this code useful for your research, please cite our paper
 
@@ -27,14 +35,6 @@ If you find this code useful for your research, please cite our paper
 - [License](#license)
 
 ## Documentation 
-
-This is the PyTorch implementation of our CVPR 2018 paper
-
-"[Geometry-Aware Learning of Maps for Camera Localization](https://arxiv.org/abs/1712.03342)" - CVPR 2018 (Spotlight). [Samarth Brahmbhatt](https://samarth-robo.github.io/), [Jinwei Gu](http://www.gujinwei.org/), [Kihwan Kim](https://www.cc.gatech.edu/~kihwan23/), [James Hays](https://www.cc.gatech.edu/~hays/), and [Jan Kautz](http://jankautz.com/)
-
-### A four-minute video summary (click below for the video)
-
-[![mapnet](./figures/mapnet.png)](https://www.youtube.com/watch?v=X6mF_IbOb4A)
 
 ## Setup
 
