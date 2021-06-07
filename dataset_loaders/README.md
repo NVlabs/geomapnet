@@ -6,7 +6,12 @@ Licensed under the CC BY-NC-SA 4.0 license (https://creativecommons.org/licenses
 ## Notes for Writing Data Loader
 
 Follow the style used in `dataset_loaders/robotcar.py` and
-`dataset_loaders/seven_scenes.py`. Importantly, the dataloader will need to
+`dataset_loaders/seven_scenes.py`. They handle the reading of dataset-specific images and camera poses.
+Camera poses are given to `utils.process_poses()` for MapNet-specific pre-processing. `utils.process_poses()`
+accepts poses in the for form of a row-major flattned 12 element vector formed from the first 3 rows of 
+the world-to-camera 4x4 matrix.
+
+Importantly, the dataloader will need to
 define the `self.gt_idx` attribute for use with the higher-level datasets in
 `dataset_loaders/composite.py`.
 
