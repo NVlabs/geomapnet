@@ -290,9 +290,10 @@ uses these undistorted and demosaiced images.
 
 ## FAQ
 Collection of issues and resolution comments that might be useful:
-- Reproducing results: [#36](https://github.com/NVlabs/geomapnet/issues/36)
+- Reproducing results: [#36](https://github.com/NVlabs/geomapnet/issues/36), [#38](https://github.com/NVlabs/geomapnet/issues/38)
 - Pose normalization, pose stats: [#35](https://github.com/NVlabs/geomapnet/issues/35), [#37](https://github.com/NVlabs/geomapnet/issues/37)
 - Data: [#26](https://github.com/NVlabs/geomapnet/issues/26)
+- Hyperparameters (beta, gamma, etc): [README](https://github.com/NVlabs/geomapnet/blob/master/scripts/configs/README.md), [#42](https://github.com/NVlabs/geomapnet/issues/42), [#41](https://github.com/NVlabs/geomapnet/issues/41), [#31](https://github.com/NVlabs/geomapnet/issues/31)
 
 ## License
 
